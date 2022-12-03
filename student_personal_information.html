@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Personal Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/student_personal_information.css">
+</head>
+<body>
+    <div class="header" >
+        <nav id="navbar">
+            <img src="img/logo.png" class="logo">
+            <ul id="menu">
+                <li><a  href="index.html">Home</a></li>
+                <li ><a  href="departments.html">Departments</a></li>
+                <li ><a  href="faculty.html">Faculty</a></li>
+                <li class="btn"><a  href="student_chapter.html">Student</a></li>
+                <li><a  href="placement.html">Placement</a></li>
+                <li><a  href="login.html">Login</a></li>
+                <li><a  href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="reg">
+        <div class="title">Student Personal Information</div>
+    <form  name="form" >
+        <div class="user">
+            <div class="input">
+                <span class="userd">First Name</span>
+                <input class="in" type="text" name="uiname" placeholder="Enter Your First Name" required>
+            </div>
+            <div class="input">
+                <span class="userd">Last Name</span>
+                <input class="in"type="text" name="fname" placeholder="Enter Your Last Name" required>
+            </div>
+            <div class="input">
+                <span class="userd">Nationality </span>
+                <select class="select" id="country">
+                    <option value="Country">Select Country</option>
+                    <option value="Indian">Indian</option>
+                    <option value="American">American</option>
+                    <option value="Australian">Australian</option>
+                    <option value="other">other</option>
+                </select>
+                
+            </div>
+            
+            <div class="input">
+                <span class="userd">Father's Name (Guardian)</span>
+                <input class="in" type="text" name="uid" placeholder="Enter Your Father's Name" >
+                
+            </div>
+            <div class="input">
+                <span class="userd">Father's Occupation (Guardian)</span>
+                <select class="select" id="Occupation">
+                    <option value="Occupation">Select Occupation</option>
+                    <option value="PE">Private Employee</option>
+                    <option value="GE">Governmant Employee</option>
+                    <option value="B">Business</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+            
+            <div class="input">
+                <span class="userd">Mother's Name </span>
+                <input class="in" type="text" name="mother name" placeholder="Enter Your Mother's Name" required>
+            </div>
+            <div class="input">
+                <span class="userd">Phone Number</span>
+                <input type="number" name="num" placeholder="Enter Your Phone Number"  required>
+            </div>
+         
+            <div class="input">
+                <span class="userd">Date of Birth</span>
+                <input class="in" type="date" name="dob" placeholder="Enter Your Date of Birth" required>
+            </div>
+        </div>
+        <div class="gend">
+            <div class="input">
+                <span class="userd">Gender</span><br>
+                <input class="in" type="radio" name="gender"><span>Male</span>
+                <input class="in" type="radio" name="gender"><span>Female</span>
+                <input class="in" type="radio" name="gender"><span>Prefer Not to Say</span>
+            </div>
+            
+            <div class="sub">
+                <input class="in" type="submit" value="SUBMIT" onclick="validate()" required>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

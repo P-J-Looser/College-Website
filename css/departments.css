@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.1));
+}
+.header nav{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    z-index: 100;
+    
+}
+nav .logo{
+    height: 10vh;
+    margin: 0 auto;
+}
+nav ul{
+    width: 80%;
+    border-radius: 5px;
+    height: 9vh;
+    margin-right: 5px;
+    background-color: rgb(9, 135, 252);
+    
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 9px 5px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 520;
+}
+nav ul :hover{
+    background-color: rgb(41, 85, 229);
+}
+nav ul .btn{
+    font-weight: bold;
+    background-color: rgb(41, 85, 229);
+}
+.card{
+    width: 20vw;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30vh 2vh 6vh;
+    grid-template-areas: "image" "line" "text";
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    transform: 0.5s;
+}
+.card:hover{
+    border-radius: 15px;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.7);
+}
+.card h2:hover{
+    cursor: pointer;
+}
+.card-image-cse{
+    grid-area: image;
+    background: url("../img/cse.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-image-ai{
+    grid-area: image;
+    background: url("../img/ai.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-image-it{
+    grid-area: image;
+    background: url("../img/it.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-image-ece{
+    grid-area: image;
+    background: url("../img/ece.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-image-mech{
+    grid-area: image;
+    background: url("../img/mech.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-image-civil{
+    grid-area: image;
+    background: url("../img/civil.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+h2{
+    color: #fff;
+    font-family: 'Lora', serif;
+}
+.card-text-cse{
+    grid-area: text;
+    margin-top: 9px;
+    padding-top: 3px;
+    color: #fff;
+    background-color: rgb(77, 123, 248);
+    letter-spacing: 5px;
+}
+.card-line-cse{
+    grid-area: line;
+    margin-top: 9px;
+    background: rgb(9, 135, 252);
+}
+.card-line-it{
+    grid-area: line;
+    margin-top: 9px;
+    background: rgb(34, 238, 16);
+}
+.card-text-it{
+    grid-area: text;
+    margin-top: 9px;
+    padding-top: 3px;
+    color: #fff;
+    background-color: rgb(34, 238, 16);
+    letter-spacing: 5px;
+}
+.card-line-ai{
+    grid-area: line;
+    margin-top: 9px;
+    background: rgb(241, 225, 80);
+}
+.card-text-ai{
+    grid-area: text;
+    margin-top: 8px;
+    padding-top: 3px;
+    color: #fff;
+    background-color: rgb(241, 225, 80);
+    letter-spacing: 5px;
+}
+.card-line-ece{
+    grid-area: line;
+    margin-top: 9px;
+    background: rgb(247, 88, 125);
+}
+.card-text-ece{
+    grid-area: text;
+    margin-top: 9px;
+    color: #fff;
+    padding-top: 3px;
+    background-color: rgb(247, 72, 113);
+    letter-spacing: 5px;
+}
+.card-line-mech{
+    grid-area: line;
+    margin-top: 9px;
+    background: rgb(157, 163, 164);
+}
+.card-text-mech{
+    grid-area: text;
+    margin-top: 9px;
+    padding-top: 3px;
+    color: #fff;
+    background-color: rgb(157, 163, 164);
+    letter-spacing: 5px;
+}
+.card-line-civil{
+    grid-area: line;
+    margin-top: 9px;
+    background: rgb(252, 135, 9);
+}
+.card-text-civil{
+    grid-area: text;
+    margin-top: 8px;
+    padding-top: 3px;
+    color: #000;
+    background-color: rgb(252, 135, 9);
+    letter-spacing: 5px;
+}
+a{
+    text-decoration: none;
+}
+
+.row1{
+    margin: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.row2{
+    margin: 2vw;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
