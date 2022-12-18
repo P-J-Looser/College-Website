@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+<link rel="icon" href="img/title.png" type="image/icon type">
+
+    <title>VIGNAN IIT</title>
+    
+</head>
+<body>
+    <section class="home" id="home">
+        <div class="header" >
+            <nav id="navbar">
+                <img src="img/logo.png" class="logo">
+                <ul id="menu">
+                    <li class="btn"><a  href="#">Home</a></li>
+                    <li><a  href="departments.html">Departments</a></li>
+                    <li><a  href="faculty.html">Faculty</a></li>
+                    <li><a  href="student_chapter.html">Student</a></li>
+                    <li><a  href="placement.html">Placement</a></li>
+                    <li><a  href="login.html">Login</a></li>
+                    <li><a  href="registration.html">Registration</a></li>
+                    <li><a  href="#AboutUs">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="welcome">
+            <span >Welcome to VIGNAN</span>
+           <video class="video" width="90%" height="510" controls autoplay muted>
+                <source src="video/viit.mp4" type="video/mp4"></sorce>
+           </video>
+        </div>
+    </section>
+    
+    <section class="AboutUs" id="AboutUs" >
+       <span> About Us </span>
+       <div class="about">
+        <figure>
+        <img src="img/Chairman.jpg">
+        <p id="p">Honourable Chairman</br><pre>        Dr.L.Rathaiah</pre></p>
+    </figure>
+      <p>Vignan's Institute of Information Technology (VIIT) was established in 2002 in the City of Destiny, Visakhapatnam, to cater to the educational needs of the general public. It acquired Autonomous status in the year 2017 and NBA and NAAC(A+) accredited Institute. The experience gained by Vignan through its earlier institutions at Guntur has only helped in establishing very high quality standards right from the inception 
+        and also is one of the reasons for the success.</p>
+       </div>
+       <p id="lp">Thought-out Reforms In Technical Education Is The Need Of The Hour" We, <br>in India today, are living in a transitional era.</p>
+    </section>
+    <!--<script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        window.onscroll = function(){
+            if (window.pageYOffset >= menu.offsetHeight){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    -->
+
+   <script>
+    window.addEventListener("scroll",function(){
+        var home=document.getElementById("home");
+        var navbar=document.getElementById("navbar");
+        navbar.classList.toggle("sticky",window.scrollY >0);
+        if (window.scrollY >0){
+            home.style.height = '85vh';
+        }
+        else{
+            home.style.height = '100vh';
+        }
+    })
+   
+   </script>
+   
+   
+</body>
+</html>
